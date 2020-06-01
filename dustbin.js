@@ -20,6 +20,7 @@ class Dustbin{
   display(){
       var pos = this.body.position;
       fill("white");
+  //comments
       rect(pos.x,pos.y,this.width,this.height);
   }
 
