@@ -36,19 +36,16 @@ function draw() {
   dustbin2.display();
   dustbin3.display();
  
-  drawSprites();
-
-  
-  
 }
 
 function keyPressed() {
-if (keyCode === UP_ARROW){
- 
-  Matter.Body.applyForce(paper.body,{x: 0.04, y: 0.06}, {x: 0.04, y: -0.06});
-
+  if (keyCode === UP_ARROW){
   
- }
+  //  Matter.Body.applyForce(paper.body,{x: 0.04, y: 0.06}, {x: 0.04, y: -0.06});
+
+    Matter.Body.applyForce(paper.body,{x: 0.045, y: 0.055}, {x: 0.04, y: -0.06});
+    
+  }
 
 }
 

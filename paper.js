@@ -3,9 +3,10 @@ class Paper{
 
       var options3={
         isStatic : true,
-        restitution : 0.9,
-        friction : 0.5,
-        density : 1.2 
+        restitution : 0.1,
+        friction : 1, 
+        density : 100 ,
+        frictionAir: 1
 
       }
 

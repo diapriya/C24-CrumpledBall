@@ -4,12 +4,12 @@ class Dustbin{
 
     var options1={
       isStatic:true,
-      friction : 0.9,
-      stitution : 0
+      friction : 1,
+      restitution : 0
       
-    }
+    };
  
-    this.body = Bodies.rectangle(x,y,width,height,options1);
+    this.body = Bodies.rectangle(x,y,width,height,[options1]);
     this.width = width;
     this.height =height;
 
@@ -20,7 +20,6 @@ class Dustbin{
   display(){
       var pos = this.body.position;
       fill("white");
-  //comments
       rect(pos.x,pos.y,this.width,this.height);
   }
 
