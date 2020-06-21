@@ -27,9 +27,8 @@ function setup() {
 
 function draw() {
 	
-  rectMode(CENTER);
-  background(0);
-  Engine.update(engine);
+  //rectMode(CENTER);
+  background(0); 
   ground.display()
   paper.display();
   dustbin1.display();
@@ -38,14 +37,13 @@ function draw() {
  
 }
 
-function keyPressed() {
-  if (keyCode === UP_ARROW){
+function keyPressed() {  
   
-  //  Matter.Body.applyForce(paper.body,{x: 0.04, y: 0.06}, {x: 0.04, y: -0.06});
-
-    Matter.Body.applyForce(paper.body,{x: 0.045, y: 0.055}, {x: 0.04, y: -0.06});
+  //    Matter.Body.applyForce(paper.body,{x: 0.045, y: 0.055}, {x: 0.04, y: -0.06});
+ 
+    Body.applyForce(paper.body,{x: paper.body.position.x, y: 200}, {x: 25, y: 45});
     
-  }
+  
 
 }
 
