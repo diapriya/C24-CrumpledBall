@@ -40,10 +40,10 @@ function draw() {
 function keyPressed() {  
   
   //    Matter.Body.applyForce(paper.body,{x: 0.045, y: 0.055}, {x: 0.04, y: -0.06});
- 
+     if(keyCode === UP_ARROW){
     Body.applyForce(paper.body,{x: paper.body.position.x, y: 200}, {x: 25, y: 45});
     
-  
+     }
 
 }
 
